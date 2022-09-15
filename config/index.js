@@ -23,7 +23,7 @@ export const config = {
   USERS: [oDMGg6gkkdcdknXhtVIr3dwpHs04
     {
       // 想要发送的人的名字
-      name: "宝宝宝宝宝宝子",
+      name: "自己",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "oDMGg6gkkdcdknXhtVIr3dwpHs04	移除",
       // 你想对他发送的模板消息的模板ID
@@ -59,15 +59,15 @@ export const config = {
     },
     {
       name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
+      id: "wx8f61a14748788253",
+      useTemplateId: "x7w72bh-Ea7wnSw95M5fqEB3ip7IDF5phQSabS7POL0",
+      province: "四川",
+      city: "成都",
+      horoscopeDate: '07-10',
+      horoscopeDateType: '今日',
+      openUrl: "https://weibo.com/newlogin?tabtype=search&openLoginLayer=0&url=https%3A%2F%2Fweibo.com%2F",
+      festivals: [{"type": "*生日", "name": "宝子", "year": "2000", "date": "05-23"}],
+      customizedDateList: [{"keyword": "love_day", date: "2022-03-26"}]
     },
     {
       name: "老婆2",
@@ -187,7 +187,12 @@ export const config = {
     * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
     * 比如：keyword: "lover_prattle" ，在测试号中就是 {{ lover_prattle.DATA }}
     * */
-  SLOT_LIST: [
+  SLOT_LIST: [ {"keyword": "lover_prattle", contents: [
+      "因为太喜欢你，所以看谁都像是情敌。",
+      "申请成为你爱里的永久居民。",
+      "你很傻，你很笨，可我还是很羡慕你，因为你有我",
+      "遇见你，就好像捡到了100斤的运气",
+    ]}，
     // 这样配置的话，就会每次发送这句话
     {"keyword": "encourage_oneself", contents: "你主要的问题在于读书太少而想得太多"},
     // 这样配置的话，就会每次随机选一句话发送
